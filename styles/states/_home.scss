@@ -1,0 +1,124 @@
+#screen{
+
+  #home{
+    @include fullScreen;
+    transform: translate(0, 100vh);
+    transition: transform ease .3s;
+    padding-top: 80px;
+    background: rgba(255,255,255,0.8);
+
+    h1{
+      font-size: 8vh;
+      margin: -10px auto;
+      padding: 0 9px;
+      color: #FFF;
+      display: table;
+      background: $orangeTrans;
+
+      @media only screen
+      and (max-device-height : 480px) {
+        display: inline-block;
+        font-size: 7vh;
+        margin: -5px 0;
+      }
+
+
+      &:nth-child(2n) {
+        color: $orangeDark;
+      }
+    }
+
+    p{
+      margin-top: 20px;
+    }
+
+  }
+
+  #user{
+    @include absoCenter;
+    width: calc(100% - 40px);
+    border-radius: 3px;
+    background: $greyLightTrans;
+    padding: 20px;
+
+    img{
+      border-radius: 50%;
+      max-width: 80px;
+      max-height: 80px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .abcRioButton.abcRioButtonLightBlue{
+      width: auto !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.3em;
+    }
+  }
+
+  &.state-home{
+
+    #home{
+      transform: translate(0, 0);
+    }
+
+    #user{
+      bottom: 80px;
+    }
+  }
+}
+
+
+// // all animations
+
+// .animate{
+
+//   // title animations
+
+//   &.title{
+//     .ani{
+//       position: fixed;
+//       bottom: -20vh;
+//       left: 50%;
+//       transform: translate(-50%, 0);
+//       transition: bottom cubic-bezier(0.65, 0, 1, 1.2) .4s;
+//       font-size: 10vh;
+//     }
+
+//     .ani.ani1.ani-active{
+//       bottom: 70vh;
+//     }
+
+//     .ani.ani2.ani-active{
+//       bottom: 60vh
+//     }
+
+//     .ani.ani3.ani-active{
+//       bottom: 50vh;
+//     }
+//   }
+
+//   &.login{
+//     .ani{
+//       position: fixed;
+//       top: 50vh;
+//       width: 100%;
+//       text-align: center;
+//       opacity: 0;
+//       transition: opacity ease .3s;
+//     }
+
+//     .ani.ani1.ani-active{
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// // google sign-in
+// #google-profile{
+//   &.signed-in .google-profile-signed-out{
+//     display: none;
+//   }
+
+// }
