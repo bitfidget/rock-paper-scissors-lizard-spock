@@ -1,0 +1,36 @@
+#screen{
+
+  nav{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFF;
+    padding: 5px;
+    min-height: 40px;
+    box-shadow: 0 0 4px 2px rgba(2, 2, 2, 0.1);
+    font-size: 12px;
+    line-height: 30px;
+
+    a{
+      width: 20%;
+      display: none;
+    }
+
+    h1{
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  &.state-home.signed-in,
+  &.state-game{
+    nav a{
+      display: block;
+    }
+    nav h1{
+      width: 60%;
+    }
+  }
+}
