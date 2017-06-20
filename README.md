@@ -34,6 +34,11 @@ Player is required to sign up (via google) in order to play but is then able to 
 Additionally, on winning the game, the player is able to share via a G+ post.
 
 
+Preview
+--------------------------------------------------------------------------------
+Currently available at https://bitfidget.github.io/rock-paper-scissors-lizard-spock/
+
+
 Technicals
 --------------------------------------------------------------------------------
 
