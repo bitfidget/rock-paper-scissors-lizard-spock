@@ -28,46 +28,6 @@
     }
   }
 
-  #game-result{
-    @include absoCenter;
-    top: 80px;
-    width: calc(100% - 40px);
-    transform: scale(1,0) translate(-50%, 0);
-    opacity: 0;
-    transition: all cubic-bezier(0.74,-0.08, 1, 1.24) .2s;
-
-    p,
-    h1,
-    h2,
-    h3{
-      margin: 0 auto;
-      color: #FFF;
-      display: table;
-      background: $orangeTrans;
-      padding: 0 9px;
-    }
-
-    p{
-      font-size: 1.4em;
-      margin: 0 auto 5px;
-    }
-
-    h1{
-      margin: 10px auto;
-      text-transform: uppercase;
-      font-size: 14vh;
-    }
-
-    h3{
-      font-size: 7vh;
-    }
-
-    h2{
-      font-size: 9vh;
-      text-transform: uppercase;
-    }
-  }
-
   &.state-game{
 
     #game{
@@ -100,6 +60,21 @@
         &.share #social-share{
           display: block;
         }
+      }
+    }
+  }
+
+  #overlay{
+    display: none;
+    background: #FFF;
+
+    &.overlay{
+      @include fullScreen;
+      display: block;
+      transition: background ease-out .3s;
+
+      &.overlay-flash{
+        background: rgba(255,255,255,0);
       }
     }
   }

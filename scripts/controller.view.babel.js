@@ -8,7 +8,8 @@ rps.panel = {
   main : document.getElementById('screen'),
   profile : document.getElementById('user-profile'),
   result : document.getElementById('game-result'),
-  controls : document.getElementById('game-control')
+  controls : document.getElementById('game-control'),
+  overlay : document.getElementById('overlay')
 }
 
 
@@ -33,6 +34,7 @@ rps.classes = {
 // all the main views of the app
 // could neaten this up by doing more hide/show via css or
 // by using a FE framework, but it would increase the load time massively
+// a lot of the game is just switching views
 
 rps.views = {
   signedIn: function () {
@@ -40,17 +42,58 @@ rps.views = {
       <h6>Welcome back ${rps.user.profile.getName()}</h6>
       <img src="${rps.user.profile.getImageUrl()}"/>
       <button onclick="rps.user.signOut();" class="tertiary">Sign out</button>`
-    rps.classes.addCls(rps.panel.main, 'signed-in')
+    rps.panel.main.classList.add('signed-in')
   },
 
   signedOut: function () {
     rps.panel.profile.innerHTML = `
       <p>Please sign in to play</p>`
-    rps.classes.removeCls(rps.panel.main, 'signed-in')
+    rps.panel.main.classList.remove('signed-in')
   },
 
   gameNew: function () {
     rps.classes.clearCls(rps.panel.main, 'state-game')
+  },
+
+  // this was added late in the game as a test user said it was needed
+  gameDoingStuffThatLooksLikeStuffButIsNotReallyStuff: function() {
+
+    rps.panel.overlay.classList.add('overlay')
+
+    // it's not beautiful but it's effective
+    pulses(50)
+    .then(function() {
+      rps.panel.overlay.classList.add('overlay-flash')
+      return pulses(400)
+    })
+    .then(function() {
+      rps.panel.overlay.classList = ""
+      return pulses(50)
+    })
+    .then(function() {
+      rps.panel.overlay.classList.add('overlay')
+      return pulses(50)
+    })
+    .then(function() {
+      rps.panel.overlay.classList.add('overlay-flash')
+      return pulses(400)
+    })
+    .then(function() {
+      rps.panel.overlay.classList = ""
+      return pulses(50)
+    })
+    .then(function() {
+      rps.panel.overlay.classList.add('overlay')
+      return pulses(50)
+    })
+    .then(function() {
+      rps.panel.overlay.classList.add('overlay-flash')
+      return pulses(400)
+    })
+    .then(function() {
+      rps.panel.overlay.classList = ""
+      rps.views.gameResult()
+    })
   },
 
   gameResult: function () {
@@ -106,6 +149,13 @@ const shareOptions = {
   cookiepolicy: 'single_host_origin',
   calltoactionlabel: "START",
 }
+
+
+// for the flahsy thing that makes it look like something is happening
+
+const pulses = ms => new Promise ((resolve, reject) => {
+  setTimeout(resolve, ms)
+})
 
 
 // kick off the app

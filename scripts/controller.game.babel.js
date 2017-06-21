@@ -16,7 +16,7 @@ rps.game = {
       me: rps.rules[choice],
       pc: rps.rules[Math.floor(Math.random() * rps.rules.length)]
     })
-    rps.views.gameResult()
+    rps.views.gameDoingStuffThatLooksLikeStuffButIsNotReallyStuff()
   }
 }
 
