@@ -23,7 +23,7 @@
       letter-spacing: 2px;
     }
 
-    #shareWin{
+    #social-share{
       display: none;
     }
   }
@@ -97,7 +97,7 @@
         bottom: 20px;
         display: block;
 
-        &.share #shareWin{
+        &.share #social-share{
           display: block;
         }
       }
