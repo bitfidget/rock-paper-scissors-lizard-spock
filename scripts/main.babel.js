@@ -4,7 +4,7 @@ var rps = rps || {}
 
 // compare the weapons chosen and evaluate win/lose/tie
 
-const returnResult = function (me, pc) {
+function returnResult (me, pc) {
   if (me === pc) {
     return 'tie'
   } else {
@@ -20,7 +20,7 @@ const returnResult = function (me, pc) {
 
 // compare the weapons chosen and evaluate the verb the winning weapon uses
 
-const returnVerb = function (me, pc) {
+function returnVerb (me, pc) {
   if (me === pc) {
     return 'nothing'
   } else {

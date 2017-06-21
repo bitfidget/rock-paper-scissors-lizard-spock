@@ -34,11 +34,6 @@ Player is required to sign up (via google) in order to play but is then able to 
 Additionally, on winning the game, the player is able to share via a G+ post.
 
 
-Preview
---------------------------------------------------------------------------------
-Currently available at https://bitfidget.github.io/rock-paper-scissors-lizard-spock/
-
-
 Technicals
 --------------------------------------------------------------------------------
 
@@ -58,7 +53,7 @@ Once done, run the following commands inside this directory:
 
 - `npm install` to save all dependencies
 - `pingy dev --port 8080` to run the app locally (the port number is important for the google API)
-- `pingy export` to compile and build a deployable package to the 'dist' folder
+- `pingy export` to compile and build a deployable package to the 'build' folder
 
 
 What next?

@@ -13,7 +13,6 @@
   "devDependencies": {
     "@pingy/cli": "^0.6.10",
     "babel-core": "^6.25.0",
-    "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "node-sass": "^4.5.3"
   }

@@ -4,13 +4,42 @@
     "inputSha": [
       {
         "file": "index.html",
-        "sha": "3fffad643ca3f60c065e1bcd4a0eee41e7538b60"
+        "sha": "ea3d6cbd72534046df26f6297eac05a66457a337"
       }
     ],
-    "outputSha": "731f7bdf506c7ee32d4567a3d6734c4bd64ffb32",
+    "outputSha": "3495fa8785976e4ec74b56b7584d692cebad18cc",
     "input": "index.html",
     "output": [
       "index.html"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/index.html",
+        "sha": "ab743f69d8a1e9e1cf1d146a09e68c073335a124"
+      }
+    ],
+    "outputSha": "ab743f69d8a1e9e1cf1d146a09e68c073335a124",
+    "input": "docs/index.html",
+    "output": [
+      "docs/index.html"
+    ]
+  },
+  {
+    "type": "babel-core@6.25.0::map::minify",
+    "inputSha": [
+      {
+        "file": "scripts/main.babel.js",
+        "sha": "2373a6637b43afc5ff70941d1af8ec241c3fd9c3"
+      }
+    ],
+    "outputSha": "36606cccbd0f437d18b3295138ed5b82c48665d4",
+    "input": "scripts/main.babel.js",
+    "output": [
+      "scripts/main.js.map",
+      "scripts/main.js"
     ]
   },
   {
@@ -46,10 +75,10 @@
     "inputSha": [
       {
         "file": "styles/_layout.scss",
-        "sha": "3ff5813eef3b2b54356ab37195e4950af98d9e9a"
+        "sha": "f78c8c7c5be3e1c619554e2061af95a3f7cc1fe5"
       }
     ],
-    "outputSha": "3ff5813eef3b2b54356ab37195e4950af98d9e9a",
+    "outputSha": "f78c8c7c5be3e1c619554e2061af95a3f7cc1fe5",
     "input": "styles/_layout.scss",
     "output": [
       "styles/_layout.scss"
@@ -77,40 +106,32 @@
         "sha": "8b035efbb8cd277f46edf839bb9d2c831c7271c3"
       },
       {
-        "file": "styles/states/_home.scss",
-        "sha": "f5525ff788ac3a4b8ff8280190bc4da5973f73e5"
+        "file": "styles/layout/_general.scss",
+        "sha": "f39fe5beae35abaf744b53f86db3dfcbd803f195"
       },
       {
-        "file": "styles/general/_links.scss",
-        "sha": "7c55bb950e4269f186ba5debc364b382efe33458"
+        "file": "styles/states/_game.scss",
+        "sha": "1a7fe54f2ba4531f53357e6c94c7452dd7233763"
+      },
+      {
+        "file": "styles/states/_home.scss",
+        "sha": "f5525ff788ac3a4b8ff8280190bc4da5973f73e5"
       },
       {
         "file": "styles/general/_variables.scss",
         "sha": "79be93eea3b8dc5fda72a63a74845a8666c338b1"
       },
       {
-        "file": "styles/layout/_nav.scss",
-        "sha": "659e5caa7a0db628bbe534a9bc4a5c022c3f62af"
-      },
-      {
-        "file": "styles/layout/_sections.scss",
-        "sha": "aad01d0c3594231f6295c1763f88139dcf867786"
-      },
-      {
-        "file": "styles/layout/_general.scss",
-        "sha": "f39fe5beae35abaf744b53f86db3dfcbd803f195"
-      },
-      {
         "file": "styles/general/_util.scss",
         "sha": "f11542b6e840389c0719e12c4ff42803e5c869c5"
       },
       {
-        "file": "styles/components/_buttons.scss",
-        "sha": "0e8822cc04b619b40e1ae6f72d5c502a17e631e8"
+        "file": "styles/general/_links.scss",
+        "sha": "7c55bb950e4269f186ba5debc364b382efe33458"
       },
       {
-        "file": "styles/states/_game.scss",
-        "sha": "ff87a2a52b7f2c888b39408eff4828b6a3d291de"
+        "file": "styles/components/_buttons.scss",
+        "sha": "0e8822cc04b619b40e1ae6f72d5c502a17e631e8"
       },
       {
         "file": "styles/general/_fonts.scss",
@@ -121,11 +142,19 @@
         "sha": "c62b852f37f03bd003ac1b4ad8589d8c46e99ce4"
       },
       {
+        "file": "styles/layout/_nav.scss",
+        "sha": "659e5caa7a0db628bbe534a9bc4a5c022c3f62af"
+      },
+      {
         "file": "styles/layout/_flex.scss",
         "sha": "8813dfa4a24e668b73a841ee12b6b93d65d33430"
+      },
+      {
+        "file": "styles/states/_result.scss",
+        "sha": "c272ff2b3f2e0669724da2694bc19659cc569132"
       }
     ],
-    "outputSha": "eda585ce81d811d3c7ba0012c2e4e4005b8cacb5",
+    "outputSha": "997d201570f2fc8b8f58fc014d8066e6d0780679",
     "input": "styles/main.scss",
     "output": [
       "styles/main.css.map",
@@ -136,60 +165,254 @@
     "type": "babel-core@6.25.0::map::minify",
     "inputSha": [
       {
-        "file": "scripts/game.babel.js",
+        "file": "docs/scripts/game.babel.js",
         "sha": "71f7f1e18ece4a573a42264808cf37ab7acb6bed"
       }
     ],
     "outputSha": "f9f6d14b2291f56f57ddcacd7654c4aedad51796",
-    "input": "scripts/game.babel.js",
+    "input": "docs/scripts/game.babel.js",
     "output": [
-      "scripts/game.js.map",
-      "scripts/game.js"
+      "docs/scripts/game.js.map",
+      "docs/scripts/game.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/scripts/game.js",
+        "sha": "f9f6d14b2291f56f57ddcacd7654c4aedad51796"
+      }
+    ],
+    "outputSha": "f9f6d14b2291f56f57ddcacd7654c4aedad51796",
+    "input": "docs/scripts/game.js",
+    "output": [
+      "docs/scripts/game.js.map",
+      "docs/scripts/game.js"
     ]
   },
   {
     "type": "babel-core@6.25.0::map::minify",
     "inputSha": [
       {
-        "file": "scripts/google.babel.js",
+        "file": "docs/scripts/google.babel.js",
         "sha": "546fbe08d7a6f253b09a5b809acd339b810cfccf"
       }
     ],
     "outputSha": "4696bbea9df96c6a307bc0adfe3ec16c3420d6ed",
-    "input": "scripts/google.babel.js",
+    "input": "docs/scripts/google.babel.js",
     "output": [
-      "scripts/google.js.map",
-      "scripts/google.js"
+      "docs/scripts/google.js.map",
+      "docs/scripts/google.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/scripts/google.js",
+        "sha": "4696bbea9df96c6a307bc0adfe3ec16c3420d6ed"
+      }
+    ],
+    "outputSha": "4696bbea9df96c6a307bc0adfe3ec16c3420d6ed",
+    "input": "docs/scripts/google.js",
+    "output": [
+      "docs/scripts/google.js.map",
+      "docs/scripts/google.js"
     ]
   },
   {
     "type": "babel-core@6.25.0::map::minify",
     "inputSha": [
       {
-        "file": "scripts/main.babel.js",
+        "file": "docs/scripts/main.babel.js",
         "sha": "1d9669a90fb00f957f635eea72de337aa3b5974f"
       }
     ],
     "outputSha": "70d54fe7c6ed2b2bccd75e3cb52d308880fa1c73",
-    "input": "scripts/main.babel.js",
+    "input": "docs/scripts/main.babel.js",
     "output": [
-      "scripts/main.js.map",
-      "scripts/main.js"
+      "docs/scripts/main.js.map",
+      "docs/scripts/main.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/scripts/main.js",
+        "sha": "70d54fe7c6ed2b2bccd75e3cb52d308880fa1c73"
+      }
+    ],
+    "outputSha": "70d54fe7c6ed2b2bccd75e3cb52d308880fa1c73",
+    "input": "docs/scripts/main.js",
+    "output": [
+      "docs/scripts/main.js.map",
+      "docs/scripts/main.js"
     ]
   },
   {
     "type": "babel-core@6.25.0::map::minify",
     "inputSha": [
       {
-        "file": "scripts/user.babel.js",
+        "file": "docs/scripts/user.babel.js",
         "sha": "faa42b31a3cac086401202139cc67dbf3bdada96"
       }
     ],
     "outputSha": "4f3cb0e75ecf25947f3ce223af7d60dbbe16273d",
-    "input": "scripts/user.babel.js",
+    "input": "docs/scripts/user.babel.js",
     "output": [
-      "scripts/user.js.map",
-      "scripts/user.js"
+      "docs/scripts/user.js.map",
+      "docs/scripts/user.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/scripts/user.js",
+        "sha": "4f3cb0e75ecf25947f3ce223af7d60dbbe16273d"
+      }
+    ],
+    "outputSha": "4f3cb0e75ecf25947f3ce223af7d60dbbe16273d",
+    "input": "docs/scripts/user.js",
+    "output": [
+      "docs/scripts/user.js.map",
+      "docs/scripts/user.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/_components.scss",
+        "sha": "cc6c2d27c8bef0fcbfb0c6c436b4e5c55ed12d09"
+      }
+    ],
+    "outputSha": "cc6c2d27c8bef0fcbfb0c6c436b4e5c55ed12d09",
+    "input": "docs/styles/_components.scss",
+    "output": [
+      "docs/styles/_components.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/_general.scss",
+        "sha": "4c9d403924135625078cbe43098015346c5236ca"
+      }
+    ],
+    "outputSha": "4c9d403924135625078cbe43098015346c5236ca",
+    "input": "docs/styles/_general.scss",
+    "output": [
+      "docs/styles/_general.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/_layout.scss",
+        "sha": "3ff5813eef3b2b54356ab37195e4950af98d9e9a"
+      }
+    ],
+    "outputSha": "3ff5813eef3b2b54356ab37195e4950af98d9e9a",
+    "input": "docs/styles/_layout.scss",
+    "output": [
+      "docs/styles/_layout.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/_states.scss",
+        "sha": "fa86a2ece60d5372a0fa2d6b7a50d72144fb85c8"
+      }
+    ],
+    "outputSha": "fa86a2ece60d5372a0fa2d6b7a50d72144fb85c8",
+    "input": "docs/styles/_states.scss",
+    "output": [
+      "docs/styles/_states.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/main.css",
+        "sha": "eda585ce81d811d3c7ba0012c2e4e4005b8cacb5"
+      }
+    ],
+    "outputSha": "eda585ce81d811d3c7ba0012c2e4e4005b8cacb5",
+    "input": "docs/styles/main.css",
+    "output": [
+      "docs/styles/main.css.map",
+      "docs/styles/main.css"
+    ]
+  },
+  {
+    "type": "node-sass@4.5.3::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/main.scss",
+        "sha": "8b035efbb8cd277f46edf839bb9d2c831c7271c3"
+      },
+      {
+        "file": "docs/styles/states/_home.scss",
+        "sha": "f5525ff788ac3a4b8ff8280190bc4da5973f73e5"
+      },
+      {
+        "file": "docs/styles/general/_links.scss",
+        "sha": "7c55bb950e4269f186ba5debc364b382efe33458"
+      },
+      {
+        "file": "docs/styles/general/_variables.scss",
+        "sha": "79be93eea3b8dc5fda72a63a74845a8666c338b1"
+      },
+      {
+        "file": "docs/styles/layout/_nav.scss",
+        "sha": "659e5caa7a0db628bbe534a9bc4a5c022c3f62af"
+      },
+      {
+        "file": "docs/styles/layout/_sections.scss",
+        "sha": "aad01d0c3594231f6295c1763f88139dcf867786"
+      },
+      {
+        "file": "docs/styles/layout/_general.scss",
+        "sha": "f39fe5beae35abaf744b53f86db3dfcbd803f195"
+      },
+      {
+        "file": "docs/styles/general/_util.scss",
+        "sha": "f11542b6e840389c0719e12c4ff42803e5c869c5"
+      },
+      {
+        "file": "docs/styles/components/_buttons.scss",
+        "sha": "0e8822cc04b619b40e1ae6f72d5c502a17e631e8"
+      },
+      {
+        "file": "docs/styles/states/_game.scss",
+        "sha": "ff87a2a52b7f2c888b39408eff4828b6a3d291de"
+      },
+      {
+        "file": "docs/styles/general/_fonts.scss",
+        "sha": "96cedd70218ece582524cf818d520bb01c79fddf"
+      },
+      {
+        "file": "docs/styles/general/_reset.scss",
+        "sha": "c62b852f37f03bd003ac1b4ad8589d8c46e99ce4"
+      },
+      {
+        "file": "docs/styles/layout/_flex.scss",
+        "sha": "8813dfa4a24e668b73a841ee12b6b93d65d33430"
+      }
+    ],
+    "outputSha": "eda585ce81d811d3c7ba0012c2e4e4005b8cacb5",
+    "input": "docs/styles/main.scss",
+    "output": [
+      "docs/styles/main.css.map",
+      "docs/styles/main.css"
     ]
   },
   {
@@ -322,25 +545,11 @@
     "type": "::map::minify",
     "inputSha": [
       {
-        "file": "styles/layout/_sections.scss",
-        "sha": "aad01d0c3594231f6295c1763f88139dcf867786"
-      }
-    ],
-    "outputSha": "aad01d0c3594231f6295c1763f88139dcf867786",
-    "input": "styles/layout/_sections.scss",
-    "output": [
-      "styles/layout/_sections.scss"
-    ]
-  },
-  {
-    "type": "::map::minify",
-    "inputSha": [
-      {
         "file": "styles/states/_game.scss",
-        "sha": "ff87a2a52b7f2c888b39408eff4828b6a3d291de"
+        "sha": "1a7fe54f2ba4531f53357e6c94c7452dd7233763"
       }
     ],
-    "outputSha": "ff87a2a52b7f2c888b39408eff4828b6a3d291de",
+    "outputSha": "1a7fe54f2ba4531f53357e6c94c7452dd7233763",
     "input": "styles/states/_game.scss",
     "output": [
       "styles/states/_game.scss"
@@ -365,13 +574,195 @@
     "inputSha": [
       {
         "file": "styles/states/_result.scss",
+        "sha": "c272ff2b3f2e0669724da2694bc19659cc569132"
+      }
+    ],
+    "outputSha": "c272ff2b3f2e0669724da2694bc19659cc569132",
+    "input": "styles/states/_result.scss",
+    "output": [
+      "styles/states/_result.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/components/_buttons.scss",
+        "sha": "0e8822cc04b619b40e1ae6f72d5c502a17e631e8"
+      }
+    ],
+    "outputSha": "0e8822cc04b619b40e1ae6f72d5c502a17e631e8",
+    "input": "docs/styles/components/_buttons.scss",
+    "output": [
+      "docs/styles/components/_buttons.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/general/_fonts.scss",
+        "sha": "96cedd70218ece582524cf818d520bb01c79fddf"
+      }
+    ],
+    "outputSha": "96cedd70218ece582524cf818d520bb01c79fddf",
+    "input": "docs/styles/general/_fonts.scss",
+    "output": [
+      "docs/styles/general/_fonts.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/general/_links.scss",
+        "sha": "7c55bb950e4269f186ba5debc364b382efe33458"
+      }
+    ],
+    "outputSha": "7c55bb950e4269f186ba5debc364b382efe33458",
+    "input": "docs/styles/general/_links.scss",
+    "output": [
+      "docs/styles/general/_links.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/general/_reset.scss",
+        "sha": "c62b852f37f03bd003ac1b4ad8589d8c46e99ce4"
+      }
+    ],
+    "outputSha": "c62b852f37f03bd003ac1b4ad8589d8c46e99ce4",
+    "input": "docs/styles/general/_reset.scss",
+    "output": [
+      "docs/styles/general/_reset.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/general/_util.scss",
+        "sha": "f11542b6e840389c0719e12c4ff42803e5c869c5"
+      }
+    ],
+    "outputSha": "f11542b6e840389c0719e12c4ff42803e5c869c5",
+    "input": "docs/styles/general/_util.scss",
+    "output": [
+      "docs/styles/general/_util.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/general/_variables.scss",
+        "sha": "79be93eea3b8dc5fda72a63a74845a8666c338b1"
+      }
+    ],
+    "outputSha": "79be93eea3b8dc5fda72a63a74845a8666c338b1",
+    "input": "docs/styles/general/_variables.scss",
+    "output": [
+      "docs/styles/general/_variables.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/layout/_flex.scss",
+        "sha": "8813dfa4a24e668b73a841ee12b6b93d65d33430"
+      }
+    ],
+    "outputSha": "8813dfa4a24e668b73a841ee12b6b93d65d33430",
+    "input": "docs/styles/layout/_flex.scss",
+    "output": [
+      "docs/styles/layout/_flex.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/layout/_general.scss",
+        "sha": "f39fe5beae35abaf744b53f86db3dfcbd803f195"
+      }
+    ],
+    "outputSha": "f39fe5beae35abaf744b53f86db3dfcbd803f195",
+    "input": "docs/styles/layout/_general.scss",
+    "output": [
+      "docs/styles/layout/_general.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/layout/_nav.scss",
+        "sha": "659e5caa7a0db628bbe534a9bc4a5c022c3f62af"
+      }
+    ],
+    "outputSha": "659e5caa7a0db628bbe534a9bc4a5c022c3f62af",
+    "input": "docs/styles/layout/_nav.scss",
+    "output": [
+      "docs/styles/layout/_nav.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/layout/_sections.scss",
+        "sha": "aad01d0c3594231f6295c1763f88139dcf867786"
+      }
+    ],
+    "outputSha": "aad01d0c3594231f6295c1763f88139dcf867786",
+    "input": "docs/styles/layout/_sections.scss",
+    "output": [
+      "docs/styles/layout/_sections.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/states/_game.scss",
+        "sha": "ff87a2a52b7f2c888b39408eff4828b6a3d291de"
+      }
+    ],
+    "outputSha": "ff87a2a52b7f2c888b39408eff4828b6a3d291de",
+    "input": "docs/styles/states/_game.scss",
+    "output": [
+      "docs/styles/states/_game.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/states/_home.scss",
+        "sha": "f5525ff788ac3a4b8ff8280190bc4da5973f73e5"
+      }
+    ],
+    "outputSha": "f5525ff788ac3a4b8ff8280190bc4da5973f73e5",
+    "input": "docs/styles/states/_home.scss",
+    "output": [
+      "docs/styles/states/_home.scss"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "docs/styles/states/_result.scss",
         "sha": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
       }
     ],
     "outputSha": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "input": "styles/states/_result.scss",
+    "input": "docs/styles/states/_result.scss",
     "output": [
-      "styles/states/_result.scss"
+      "docs/styles/states/_result.scss"
     ]
   }
 ]
