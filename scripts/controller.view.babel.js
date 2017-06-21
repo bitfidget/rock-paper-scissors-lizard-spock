@@ -56,7 +56,7 @@ rps.views = {
   },
 
   // this was added late in the game as a test user said it was needed
-  gameDoingStuffThatLooksLikeStuffButIsNotReallyStuff: function() {
+  gameDoingStuffThatLooksLikeStuffButIsNotReallyStuff: function () {
 
     rps.panel.overlay.classList.add('overlay')
 
