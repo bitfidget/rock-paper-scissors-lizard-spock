@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
-		<meta name="description" content="">
+		<title>R.P.S</title>
+		<meta name="description" content="Be the hand sign you seek">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
   	<meta name="google-signin-client_id" content="311755866043-nqbamcbg2kb63k8oo9gpq38iu0s11b4u.apps.googleusercontent.com">
 
@@ -12,30 +12,32 @@
 
 	<script>
 	  var onSignIn = function (googleUser) {
-	    user.signIn(googleUser)
+	    rps.user.signIn(googleUser)
 	  }
 	</script>
 
 	<body>
 		<div id="screen">
 
+			<!-- navigation bar -->
 			<nav flex>
-				<a onclick="updateState.home()">
+				<a onclick="rps.classes.home()">
 					Home
 				</a>
 				<h1>RPSLS</h1>
-				<a onclick="user.signOut()" class="sign-out">
+				<a onclick="rps.user.signOut()" class="sign-out">
 					Sign out
 				</a>
 			</nav>
 
+			<!-- home/welcome panel -->
 			<div id="home">
-				<div class="title animate">
-			    <h1 class="ani ani1" data-delay="1500">Rock</h1>
-			    <h1 class="ani ani2" data-delay="1000">Paper</h1>
-			    <h1 class="ani ani3" data-delay="500">Scissors</h1>
-			    <h1 class="ani ani3" data-delay="500">Lizard</h1>
-			    <h1 class="ani ani3" data-delay="500">Spock</h1>
+				<div class="title">
+			    <h1>Rock</h1>
+			    <h1>Paper</h1>
+			    <h1>Scissors</h1>
+			    <h1>Lizard</h1>
+			    <h1>Spock</h1>
 			    <p>it's a game Jim, but not as we know it</p>
 			  </div>
 
@@ -46,20 +48,21 @@
 			    <div class="g-signin2 hide-on-sign-in" data-onSuccess="onSignIn"></div>
 				</div>
 
-				<button onclick="game.init();" class="primary hide-on-anon">Play</button>
+				<button onclick="rps.views.gameNew()" class="primary hide-on-anon">Play</button>
 
 			</div>
 
+			<!-- game play panel -->
 			<div id="game">
 
 				<div id="game-choice">
 					<!-- game choices load here -->
 					<h3>Choose your weapon</h3>
-					<button onclick="game.select(0)">Scissors</button>
-					<button onclick="game.select(1)">Paper</button>
-					<button onclick="game.select(2)">Rock</button>
-					<button onclick="game.select(3)">Lizard</button>
-					<button onclick="game.select(4)">Spock</button>
+					<button onclick="rps.game.makeChoice(0)">Scissors</button>
+					<button onclick="rps.game.makeChoice(1)">Paper</button>
+					<button onclick="rps.game.makeChoice(2)">Rock</button>
+					<button onclick="rps.game.makeChoice(3)">Lizard</button>
+					<button onclick="rps.game.makeChoice(4)">Spock</button>
 				</div>
 
 				<div id="game-result">
@@ -67,18 +70,25 @@
 				</div>
 
 				<div id="game-control">
-					<div id="shareWin"><button>I must warn Jim</button></div>
-					<button onclick="game.init();" >Play again</button>
+					<div id="social-share"><button>I must warn Jim</button></div>
+					<button onclick="rps.views.gameNew()">Play again</button>
 				</div>
 
-				<button onclick="game.init();">New game</button>
+				<button onclick="rps.views.gameNew()">New game</button>
 
 			</div>
+
+			<!-- flashy thing -->
+			<div id="overlay"></div>
+
 		</div>
 
 		<script src="scripts/main.js"></script>
-		<script src="scripts/user.js"></script>
-		<script src="scripts/game.js"></script>
+		<script src="scripts/model.game.js"></script>
+		<script src="scripts/controller.user.js"></script>
+		<script src="scripts/controller.game.js"></script>
+		<script src="scripts/controller.view.js"></script>
+		<!-- google api for share and login -->
 		<script src="http://apis.google.com/js/platform.js"></script>
 	</body>
 </html>
