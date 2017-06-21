@@ -1,0 +1,2 @@
+"use strict";var rps=rps||{};rps.history=[],rps.game={makeChoice:function(s){rps.history.push({me:rps.rules[s],pc:rps.rules[Math.floor(Math.random()*rps.rules.length)]}),rps.views.gameDoingStuffThatLooksLikeStuffButIsNotReallyStuff()}};
+//# sourceMappingURL=controller-game.js.map

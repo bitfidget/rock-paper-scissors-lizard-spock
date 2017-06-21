@@ -1,0 +1,2 @@
+"use strict";var screen=document.getElementById("screen"),gameResult=document.getElementById("game-result"),userProfile=document.getElementById("user-profile"),gameControl=document.getElementById("game-control"),updateState={addCls:function(e,t){e.classList.add(t)},removeCls:function(e,t){e.classList.remove(t)},clearCls:function(e,t){e.classList=t||""},home:function(){screen.classList="state-home signed-in"}};
+//# sourceMappingURL=main.js.map

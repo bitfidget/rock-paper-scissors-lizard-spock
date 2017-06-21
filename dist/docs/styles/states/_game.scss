@@ -1,0 +1,81 @@
+#screen{
+
+  #game{
+    @include fullScreen;
+    transform: translate(0, -100vh);
+    transition: transform ease .3s;
+    background: $greyLightTrans;
+    color: #FFF;
+  }
+
+  #game-choice,
+  #game-control{
+    @include absoCenter;
+    width: calc(100% - 40px);
+
+    button{
+      width: 100%;
+      margin-top: 10px;
+      font-family: 'Bangers';
+      text-transform: uppercase;
+      font-size: 24px;
+      padding: 10px 40px;
+      letter-spacing: 2px;
+    }
+
+    #social-share{
+      display: none;
+    }
+  }
+
+  &.state-game{
+
+    #game{
+      transform: translate(0, 0);
+    }
+
+    #game-choice{
+      bottom: 20px;
+    }
+
+    #game-control{
+      display: none;
+    }
+
+    &.result{
+
+      #game-result{
+        transform: scale(1,1) translate(-50%, 0);
+        opacity: 1;
+      }
+
+      #game-choice{
+        display: none;
+      }
+
+      #game-control{
+        bottom: 20px;
+        display: block;
+
+        &.share #social-share{
+          display: block;
+        }
+      }
+    }
+  }
+
+  #overlay{
+    display: none;
+    background: #FFF;
+
+    &.overlay{
+      @include fullScreen;
+      display: block;
+      transition: background ease-out .3s;
+
+      &.overlay-flash{
+        background: rgba(255,255,255,0);
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import "variables";
+
+// text alignment
+
+[txt=c] {
+  text-align: center;
+}
+
+[txt=r] {
+  text-align: right;
+}
+
+[txt=l] {
+  text-align: left;
+}
+
+// widths
+
+[full] {
+  width: 100%;
+}
+
+[half] {
+  width: 50%;
+}
+
+[third] {
+  width: 33.33%;
+}
+
+// margins
+
+[mt="1"] {
+  margin-top: 10px;
+}
+
+[mt="2"] {
+  margin-top: 20px;
+}
+
+[mt="4"] {
+  margin-top: 40px;
+}
+
+//
+
+[mb="1"] {
+  margin-bottom: 10px;
+}
+
+[mb="2"] {
+  margin-bottom: 20px;
+}
+
+[mb="4"] {
+  margin-bottom: 40px;
+}
+
+//
+
+[mr="1"] {
+  margin-right: 10px;
+}
+
+[mr="2"] {
+  margin-right: 20px;
+}
+
+[mr="4"] {
+  margin-right: 40px;
+}
+
+[mr="5"] {
+  margin-right: 50px;
+}
+
+//
+
+[ml="1"] {
+  margin-left: 10px;
+}
+
+[ml="2"] {
+  margin-left: 20px;
+}
+
+[ml="4"] {
+  margin-left: 40px;
+}
+
+[ml="5"] {
+  margin-left: 50px;
+}

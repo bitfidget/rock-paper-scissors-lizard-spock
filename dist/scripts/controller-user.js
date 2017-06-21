@@ -1,0 +1,2 @@
+"use strict";var rps=rps||{};rps.user={signIn:function(s){this.profile=s.getBasicProfile(),rps.views.signedIn()},signOut:function(){gapi.auth2.getAuthInstance().signOut().then(function(){rps.views.signedOut()}),delete rps.user.profile}};
+//# sourceMappingURL=controller-user.js.map
